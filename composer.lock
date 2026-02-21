@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf7eac74ebfe6d3548d6a6ef058893f8",
+    "content-hash": "02ec5bbe38512efb66cad79f261c9030",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -5253,17 +5253,65 @@
             "time": "2022-12-17T21:53:22+00:00"
         },
         {
-            "name": "smart-daddy/catalog-category",
+            "name": "smart-daddy/catalog-brand",
             "version": "v1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/SMART-DADDY/Catalog-Category.git",
-                "reference": "85491b587bfa867917490974f55e74b862b22a15"
+                "url": "https://github.com/SMART-DADDY/Catalog-Brand.git",
+                "reference": "387a991780c516cc2d72c7f3f917e3bb079f0bce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SMART-DADDY/Catalog-Category/zipball/85491b587bfa867917490974f55e74b862b22a15",
-                "reference": "85491b587bfa867917490974f55e74b862b22a15",
+                "url": "https://api.github.com/repos/SMART-DADDY/Catalog-Brand/zipball/387a991780c516cc2d72c7f3f917e3bb079f0bce",
+                "reference": "387a991780c516cc2d72c7f3f917e3bb079f0bce",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^5.0",
+                "laravel/framework": "^12.0",
+                "php": "^8.4"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^10.0",
+                "pestphp/pest": "^4.0",
+                "pestphp/pest-plugin-laravel": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SmartDaddy\\CatalogBrand\\CatalogBrandServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SmartDaddy\\CatalogBrand\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Brand module for SMART-TiLL",
+            "support": {
+                "issues": "https://github.com/SMART-DADDY/Catalog-Brand/issues",
+                "source": "https://github.com/SMART-DADDY/Catalog-Brand/tree/v1.0.2"
+            },
+            "time": "2026-02-21T08:06:08+00:00"
+        },
+        {
+            "name": "smart-daddy/catalog-category",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SMART-DADDY/Catalog-Category.git",
+                "reference": "84f217b5e7768e16f83532824cf4e2de6acfa1ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SMART-DADDY/Catalog-Category/zipball/84f217b5e7768e16f83532824cf4e2de6acfa1ed",
+                "reference": "84f217b5e7768e16f83532824cf4e2de6acfa1ed",
                 "shasum": ""
             },
             "require": {
@@ -5296,9 +5344,9 @@
             "description": "Category module for SMART-TiLL",
             "support": {
                 "issues": "https://github.com/SMART-DADDY/Catalog-Category/issues",
-                "source": "https://github.com/SMART-DADDY/Catalog-Category/tree/v1.0.2"
+                "source": "https://github.com/SMART-DADDY/Catalog-Category/tree/v1.0.3"
             },
-            "time": "2026-02-20T21:54:24+00:00"
+            "time": "2026-02-20T23:12:40+00:00"
         },
         {
             "name": "spatie/invade",
@@ -9757,27 +9805,27 @@
         },
         {
             "name": "pestphp/pest-plugin-laravel",
-            "version": "v4.0.0",
+            "version": "v4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest-plugin-laravel.git",
-                "reference": "e12a07046b826a40b1c8632fd7b80d6b8d7b628e"
+                "reference": "3057a36669ff11416cc0dc2b521b3aec58c488d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest-plugin-laravel/zipball/e12a07046b826a40b1c8632fd7b80d6b8d7b628e",
-                "reference": "e12a07046b826a40b1c8632fd7b80d6b8d7b628e",
+                "url": "https://api.github.com/repos/pestphp/pest-plugin-laravel/zipball/3057a36669ff11416cc0dc2b521b3aec58c488d0",
+                "reference": "3057a36669ff11416cc0dc2b521b3aec58c488d0",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "^11.45.2|^12.25.0",
-                "pestphp/pest": "^4.0.0",
+                "laravel/framework": "^11.45.2|^12.52.0|^13.0",
+                "pestphp/pest": "^4.4.1",
                 "php": "^8.3.0"
             },
             "require-dev": {
-                "laravel/dusk": "^8.3.3",
-                "orchestra/testbench": "^9.13.0|^10.5.0",
-                "pestphp/pest-dev-tools": "^4.0.0"
+                "laravel/dusk": "^8.3.6",
+                "orchestra/testbench": "^9.13.0|^10.9.0|^11.0",
+                "pestphp/pest-dev-tools": "^4.1.0"
             },
             "type": "library",
             "extra": {
@@ -9815,7 +9863,7 @@
                 "unit"
             ],
             "support": {
-                "source": "https://github.com/pestphp/pest-plugin-laravel/tree/v4.0.0"
+                "source": "https://github.com/pestphp/pest-plugin-laravel/tree/v4.1.0"
             },
             "funding": [
                 {
@@ -9827,7 +9875,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-20T12:46:37+00:00"
+            "time": "2026-02-21T00:29:45+00:00"
         },
         {
             "name": "pestphp/pest-plugin-mutate",
@@ -11955,7 +12003,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.2"
+        "php": "^8.4"
     },
     "platform-dev": {},
     "plugin-api-version": "2.9.0"

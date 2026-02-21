@@ -44,6 +44,10 @@ class StorePanelProvider extends PanelProvider
                 in: base_path('vendor/smart-daddy/catalog-category/src/Filament/Resources'),
                 for: 'SmartDaddy\\CatalogCategory\\Filament\\Resources'
             )
+            ->discoverResources(
+                in: base_path('vendor/smart-daddy/catalog-brand/src/Filament/Resources'),
+                for: 'SmartDaddy\\CatalogBrand\\Filament\\Resources'
+            )
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
             ->pages([
                 Dashboard::class,
