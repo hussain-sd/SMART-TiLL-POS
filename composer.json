@@ -17,6 +17,7 @@
         "smart-daddy/catalog-attribute": "^1.0",
         "smart-daddy/catalog-brand": "^1.0",
         "smart-daddy/catalog-category": "^1.0",
+        "smart-daddy/catalog-product": "^1.0",
         "smart-daddy/catalog-unit": "^1.0"
     },
     "require-dev": {
