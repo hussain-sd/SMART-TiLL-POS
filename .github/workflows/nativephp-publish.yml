@@ -14,8 +14,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  publish-linux:
-    name: Publish Linux build
+  publish-windows:
+    name: Publish Windows build only
     runs-on: ubuntu-latest
 
     env:
