@@ -130,5 +130,8 @@ jobs:
       - name: Build frontend assets
         run: npm run build
 
+      - name: Install NativePHP scaffolding
+        run: php artisan native:install --publish --no-interaction
+
       - name: Publish NativePHP release
         run: php artisan native:publish all --no-interaction
